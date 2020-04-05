@@ -1,0 +1,13 @@
+<app-header (tabSelected)="setTabName($event)"></app-header>
+<div class="container">
+  <div class="row pb-10">
+    <div class="col-xl-12">
+      <app-recipes *ngIf="tabName === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="tabName === 'shopping-list'"></app-shopping-list>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-12">
+    </div>
+  </div>
+</div>

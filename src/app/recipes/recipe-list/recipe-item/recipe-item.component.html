@@ -1,0 +1,15 @@
+<p>recipe-item works!</p>
+<!-- <ng-content></ng-content> -->
+
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" (click)="sendRecipeToRecipeDetails()">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1" #recipeName>{{ recipe.name }}</h5>
+            <span class="d-flex justify-content-right" style="float: right;">
+                <img class="mb-1 img-responsive" style="max-width: 75px; max-height: 75px;" src="../../../assets/images/FormalDp.jpg"  alt="recipe image">
+            </span>
+            <!-- <small>3 days ago</small> -->
+        </div>
+        <p class="mb-1" #recipeDescription>{{ recipe.description }}</p>
+    </a>
+</div>

@@ -1,0 +1,16 @@
+<div class="row">
+
+    <div class="col-xl-10" >
+       <app-shopping-edit (newIngredient)="addNewItemToList($event)"></app-shopping-edit>
+    </div>
+    <div class="col-xl-5 p-20">
+        <hr/>
+        The List
+
+        <div class="list-group pb-20" >
+            <a href="#" class="list-group-item list-group-item-action " *ngFor="let ingre of ingredients" (click)="deleteItemFromList(ingre)">
+              {{ ingre.name }} ({{ ingre.amount }})
+            </a>
+          </div>
+    </div>
+</div>

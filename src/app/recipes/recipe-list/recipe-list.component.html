@@ -1,0 +1,17 @@
+<p>recipe-list works!</p>
+
+<div class="row">
+    <div class="col-xl-12">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            New Recipe</button>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-xl-12">
+        <app-recipe-item *ngFor="let recipeEl of recipes" [recipe]="recipeEl" (recipeDetails)="onGettingSelRecDet(recipeEl)">
+
+        </app-recipe-item>
+    </div>
+</div>
